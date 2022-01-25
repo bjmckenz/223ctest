@@ -15,10 +15,10 @@ int main(int argc, const char* argv[]) {
   printf("Entered '%s'\n",buf);
 
   int hh;
-  float mm;
-  if (2 == sscanf(buf,"%d %f",&hh,&mm))
+  int mm;
+  if (2 == sscanf(buf,"%d %d",&hh,&mm))
   {
-    printf("got %d %.2f\n",hh,mm);
+    printf("got %d %d\n",hh,mm);
   }
   return EXIT_SUCCESS;
 }
